@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV - [TU NOMBRE]</title>
+    <!-- DESAFÍO PLUS: Añadir favicon aquí -->
 </head>
 <body>
-    <p>holaaaaa!!</p>
+
+    <!-- ====================
+         HEADER: Tu nombre y título profesional
+         ==================== -->
+    <header>
+        <!-- COMPLETAR: Tu nombre completo -->
+        <h2>Denisse Alejandra Silva Moctezuma</h2>
+
+        <!-- COMPLETAR: Tu título profesional o lo que estudias -->
+        <p>Estudiante de Ingeniería de Software</p>
+    </header>
+
+    <!-- ====================
+         MAIN: Contenido principal del CV
+         ==================== -->
+    <main>
+
+        <!-- SECCIÓN: Sobre Mí -->
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+
+            <!-- COMPLETAR: Breve descripción de ti (2-4 líneas) -->
+            <p>
+            Soy un Estudiante que espera poder ampliar su conocimiento en programación especialmente
+            en desarrollo de páginas web.
+            </p>
+        </section>
+
+        <!-- SECCIÓN: Experiencia / Educación -->
+        <section id="experiencia">
+            <h2>Experiencia y Educación</h2>
+
+            <!-- Usamos una lista desordenada para items -->
+            <ul>
+                <!-- COMPLETAR: Item 1 -->
+                <li>
+                    <strong>Niños heroes</strong> - primaria
+                    <br>
+                    Aprendi lo básico necesario para la vida, operaciones ariméticas
+                    y español. Aparte de materias que ayudaron a fortaleces los conocimientos
+                    de una niña.
+                </li>
+
+                <!-- COMPLETAR: Item 2 -->
+                <li>
+                    <strong>Enrique Corona Morfin</strong> - Secundaria
+                    <br>
+                    Con la pandemia de por medio fue dificil para mi adaptarme al modo online, asi que no pude aprender mucho
+                    de lo que si me acuerdo son las materias de matemáticas y español, siempre han sido de las que aprendizaje
+                    obtuve.
+                </li>
+
+                <!-- COMPLETAR: Item 3 (opcional) -->
+                <li>
+                    <strong>Bachillerato #2</strong> - Preparatoria
+                    <br>
+                    Yo entre al Bachillerato en técnico analista programador, en el que aprendi 
+                    conocimiento básicos de programación, más que nada, la lógica.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <!-- COMPLETAR: Lista de habilidades -->
+            <ul>
+                <li>Responsabilidad</li>
+                <li>Enfocarme en lo que debo hacer</li>
+                <li>Se defenderme en lenguajes como HTML o CSS</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Contacto (Formulario) -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <!-- 
+                FORMULARIO HTML5 CON VALIDACIÓN NATIVA
+                Nota: Esto no envía emails aún (necesita backend), 
+                pero valida que los datos sean correctos
+            -->
+            <form action="#" method="post">
+
+                <!-- Campo de Email con validación automática -->
+                <p>
+                    <label for="email">Tu Email:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="dsilva19@ucol.mx"
+                        required
+                    >
+                </p>
+
+                <!-- Campo de Nombre (requerido) -->
+                <p>
+                    <label for="nombre">Tu Nombre:</label><br>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Denisse Alejandra Silva Moctezuma"
+                        required
+                        minlength="2"
+                    >
+                </p>
+
+                <!-- Campo de Mensaje -->
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="4" 
+                        cols="50"
+                        placeholder="Me gusta mucho programar en páginas web, es lo mejor. Es lo que mas me gusta y lo que siempre me ha llamado más la atención"
+                        required
+                        minlength="10"
+                    ></textarea>
+                </p>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
+
+            <!-- Información de contacto directo -->
+            <p>
+                <strong>Email directo:</strong>dsilva19@ucol.mx<br>
+                <strong>Teléfono:</strong> 312 131 2457
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ====================
+         FOOTER: Pie de página
+         ==================== -->
+    <footer>
+        <p>&copy; 2024 Denisse Alejandra Silva Moctezuma CV creado con HTML5.</p>
+
+        <!-- OPCIONAL: Enlace a tu GitHub -->
+        <p>
+            <a href="https://github.com/[TU-USUARIO]" target="_blank">
+                Ver mi GitHub
+            </a>
+        </p>
+    </footer>
+
 </body>
 </html>
