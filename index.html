@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/a45b8cb890.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - [TU NOMBRE]</title>
+    <title>CV - Silva Moctezuma Denisse Alejandra</title>
+    <link rel="stylesheet" href="style.css">
+   
+
     <!-- DESAFÍO PLUS: Añadir favicon aquí -->
 </head>
 <body>
@@ -12,21 +22,34 @@
          HEADER: Tu nombre y título profesional
          ==================== -->
     <header>
+       
+         <img src="/img/foto_de_perfil.jpeg" alt="">
+    
         <!-- COMPLETAR: Tu nombre completo -->
-        <h2>Denisse Alejandra Silva Moctezuma</h2>
+          <div class="header">
+        <h1>Denisse Alejandra Silva Moctezuma</h1>
 
         <!-- COMPLETAR: Tu título profesional o lo que estudias -->
         <p>Estudiante de Ingeniería de Software</p>
+        </div>
     </header>
+
+
+
+
+
+
 
     <!-- ====================
          MAIN: Contenido principal del CV
          ==================== -->
     <main>
 
+   
         <!-- SECCIÓN: Sobre Mí -->
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
+          
+        <section id="sobre-mi" class="sobre-mi">
+           <h2>Sobre Mí</h2>
 
             <!-- COMPLETAR: Breve descripción de ti (2-4 líneas) -->
             <p>
@@ -35,56 +58,76 @@
             </p>
         </section>
 
+
+
+
+        <h2>Experiencia y Educación</h2>
+
         <!-- SECCIÓN: Experiencia / Educación -->
-        <section id="experiencia">
-            <h2>Experiencia y Educación</h2>
+        <section id="experiencia"  class="educacion">
+            
 
             <!-- Usamos una lista desordenada para items -->
             <ul>
                 <!-- COMPLETAR: Item 1 -->
                 <li>
-                    <strong>Niños heroes</strong> - primaria
+                   <p class="educacion-titulo"><strong>Bachillerato No.2</strong> Preparatoria </p>
+                   
+                   <p class="educacion-texto">
                     <br>
-                    Aprendi lo básico necesario para la vida, operaciones ariméticas
-                    y español. Aparte de materias que ayudaron a fortaleces los conocimientos
-                    de una niña.
+                   Aprendi algo gracias a que fui en el área de analista programador en en el Bachillerato,
+                   fue ahi donde empece a programar por primera vez.
+                    </p> 
                 </li>
 
                 <!-- COMPLETAR: Item 2 -->
                 <li>
-                    <strong>Enrique Corona Morfin</strong> - Secundaria
+                 <p class="educacion-titulo">  <strong>Desde casa</strong> - en linea </p>
+                 <p class="educacion-texto">
                     <br>
-                    Con la pandemia de por medio fue dificil para mi adaptarme al modo online, asi que no pude aprender mucho
-                    de lo que si me acuerdo son las materias de matemáticas y español, siempre han sido de las que aprendizaje
-                    obtuve.
+                    Solia crear páginas con HTML y CSS básico, aunque ciertamente usaba cosas avanzadas. 
+                    No sabia usarlas muy bien por lo que siempre tenia errores, pero sirvio como expeciencia. 
+                     </p> 
                 </li>
 
                 <!-- COMPLETAR: Item 3 (opcional) -->
                 <li>
-                    <strong>Bachillerato #2</strong> - Preparatoria
+                <p class="educacion-titulo">   <strong>Facultad de telemática</strong> Univervidad </p>
+                <p class="educacion-texto">
                     <br>
-                    Yo entre al Bachillerato en técnico analista programador, en el que aprendi 
-                    conocimiento básicos de programación, más que nada, la lógica.
+                    Realice una o dos páginas en los anteriores semestres como extra para trabajos finales
+                    de algunas materias. 
+                    </p> 
                 </li>
             </ul>
         </section>
 
+
+
+
         <!-- SECCIÓN: Habilidades -->
-        <section id="habilidades">
+        <section id="habilidades" class="habilidades" >
+            <div class="habilidades-titulo">
             <h2>Habilidades</h2>
+            <p>Pasa el cursor para ver más</p>
+            </div>
+          
+            
 
             <!-- COMPLETAR: Lista de habilidades -->
-            <ul>
+            <ul class="habilidades-move">
                 <li>Responsabilidad</li>
                 <li>Enfocarme en lo que debo hacer</li>
                 <li>Se defenderme en lenguajes como HTML o CSS</li>
             </ul>
         </section>
+    
 
         <!-- SECCIÓN: Contacto (Formulario) -->
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section id="contacto" class="form">
+            <h2 class="contacto">Contacto</h2>
 
+            <div class="disp">
             <!-- 
                 FORMULARIO HTML5 CON VALIDACIÓN NATIVA
                 Nota: Esto no envía emails aún (necesita backend), 
@@ -92,6 +135,7 @@
             -->
             <form action="#" method="post">
 
+                <div class="content">
                 <!-- Campo de Email con validación automática -->
                 <p>
                     <label for="email">Tu Email:</label><br>
@@ -99,7 +143,7 @@
                         type="email" 
                         id="email" 
                         name="email" 
-                        placeholder="dsilva19@ucol.mx"
+                        placeholder="x@ucol.mx"
                         required
                     >
                 </p>
@@ -111,7 +155,7 @@
                         type="text" 
                         id="nombre" 
                         name="nombre" 
-                        placeholder="Denisse Alejandra Silva Moctezuma"
+                        placeholder="tu nombre"
                         required
                         minlength="2"
                     >
@@ -125,7 +169,7 @@
                         name="mensaje" 
                         rows="4" 
                         cols="50"
-                        placeholder="Me gusta mucho programar en páginas web, es lo mejor. Es lo que mas me gusta y lo que siempre me ha llamado más la atención"
+                        placeholder="mensaje máximo de  10 caracteres"
                         required
                         minlength="10"
                     ></textarea>
@@ -133,27 +177,45 @@
 
                 <!-- Botón de envío -->
                 <button type="submit">Enviar Mensaje</button>
-
+</div>
             </form>
 
             <!-- Información de contacto directo -->
-            <p>
+             <div class="datos">
+                
+            <p >
                 <strong>Email directo:</strong>dsilva19@ucol.mx<br>
-                <strong>Teléfono:</strong> 312 131 2457
+                <i class="fa-solid fa-envelope"></i>
             </p>
+            <p>
+                <strong>Teléfono:</strong> 312 131 2457<br>
+                <i class="fa-solid fa-phone"></i>
+           </p>
+
+            </div>
+
+        </div>
         </section>
 
+
+
     </main>
+
+
+
+
+
+
 
     <!-- ====================
          FOOTER: Pie de página
          ==================== -->
-    <footer>
-        <p>&copy; 2024 Denisse Alejandra Silva Moctezuma CV creado con HTML5.</p>
+    <footer class="footer">
+        <p>&copy; 2026 Denisse Alejandra Silva Moctezuma CV creado con HTML5.</p>
 
         <!-- OPCIONAL: Enlace a tu GitHub -->
         <p>
-             <a href="https://github.com/denisse-ds" target="_blank">
+            <a href="https://github.com/denisse-ds" target="_blank">
                 Ver mi GitHub
             </a>
         </p>
@@ -161,3 +223,5 @@
 
 </body>
 </html>
+
+<!--https://github.com/denisse-ds/o-->
